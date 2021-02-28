@@ -25,7 +25,16 @@ public class Tv {
 	public void setSoundNumber(int soundNumber) {
 		this.soundNumber = soundNumber;
 	}
-	
+
+	public int getChannelNumber() {
+		return channelNumber;
+	}
+
+	public void setChannelNumber(int channelNumber) {
+		this.channelNumber = channelNumber;
+		System.out.println("[TV] channel = " + this.channelNumber);
+	}
+
 	public void powerOnOff() {
 		this.on = !this.on;
 		String tvState = this.on == true? "on": "off";
